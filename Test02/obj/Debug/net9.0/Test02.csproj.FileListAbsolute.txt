@@ -1,0 +1,14 @@
+C:\Users\nupoo\OneDrive\Desktop\chash\output_reasoning\Test02\bin\Debug\net9.0\Test02.exe
+C:\Users\nupoo\OneDrive\Desktop\chash\output_reasoning\Test02\bin\Debug\net9.0\Test02.deps.json
+C:\Users\nupoo\OneDrive\Desktop\chash\output_reasoning\Test02\bin\Debug\net9.0\Test02.runtimeconfig.json
+C:\Users\nupoo\OneDrive\Desktop\chash\output_reasoning\Test02\bin\Debug\net9.0\Test02.dll
+C:\Users\nupoo\OneDrive\Desktop\chash\output_reasoning\Test02\bin\Debug\net9.0\Test02.pdb
+C:\Users\nupoo\OneDrive\Desktop\chash\output_reasoning\Test02\obj\Debug\net9.0\Test02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nupoo\OneDrive\Desktop\chash\output_reasoning\Test02\obj\Debug\net9.0\Test02.AssemblyInfoInputs.cache
+C:\Users\nupoo\OneDrive\Desktop\chash\output_reasoning\Test02\obj\Debug\net9.0\Test02.AssemblyInfo.cs
+C:\Users\nupoo\OneDrive\Desktop\chash\output_reasoning\Test02\obj\Debug\net9.0\Test02.csproj.CoreCompileInputs.cache
+C:\Users\nupoo\OneDrive\Desktop\chash\output_reasoning\Test02\obj\Debug\net9.0\Test02.dll
+C:\Users\nupoo\OneDrive\Desktop\chash\output_reasoning\Test02\obj\Debug\net9.0\refint\Test02.dll
+C:\Users\nupoo\OneDrive\Desktop\chash\output_reasoning\Test02\obj\Debug\net9.0\Test02.pdb
+C:\Users\nupoo\OneDrive\Desktop\chash\output_reasoning\Test02\obj\Debug\net9.0\Test02.genruntimeconfig.cache
+C:\Users\nupoo\OneDrive\Desktop\chash\output_reasoning\Test02\obj\Debug\net9.0\ref\Test02.dll
