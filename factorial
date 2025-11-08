@@ -1,0 +1,30 @@
+using System; //namespace
+
+class Program //default visibility is 'internal' if not specified
+{
+    // calculating factorial
+    public static long Factorial(int n)
+    {
+        long result = 1;
+        for (int i = 1; i <= n; i++)
+        {
+            result *= i;
+        }
+        return result;
+    }
+
+    public static void Main(string[] args) //entry point of the program
+    {
+        Console.Write("Enter a number: ");
+        int number = Convert.ToInt32(Console.ReadLine());
+        if (number < 0)
+        {
+            Console.WriteLine("Factorial is not defined for negative numbers.");
+        }
+        else
+        {
+            long fact = Factorial(number); //call the static method
+            Console.WriteLine("Factorial of " + number + " is: " + fact);
+        }
+    }
+}
