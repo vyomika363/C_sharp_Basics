@@ -1,0 +1,20 @@
+using System; //namespace
+
+class Program //default visibility is 'internal' if not specified
+{
+    public static void Main(string[] args) //entry point of the program
+    {
+        string userInput; //variable to store user input
+        // a do-while loop that keeps running until user types exit
+        do
+        {
+            Console.Write("Enter something (type 'exit' to quit): ");
+            userInput = Console.ReadLine();
+            if (userInput.ToLower() != "exit")
+            {
+                Console.WriteLine("You entered: " + userInput);
+            }
+        } while (userInput.ToLower() != "exit"); //loop condition
+        Console.WriteLine("The end!");
+    }
+}
