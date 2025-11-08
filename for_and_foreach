@@ -1,0 +1,24 @@
+using System; //namespace
+
+class Program //default visibility is 'internal' if not specified
+{
+    public static void Main(string[] args) //entry point of the program
+    {
+        //using for loop
+        Console.WriteLine("Using for loop:");
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.Write(i + " ");
+        }
+        Console.WriteLine(); //line break
+
+        //using foreach loop
+        Console.WriteLine("Using foreach loop:");
+        int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; //array of numbers
+        foreach (int num in numbers)
+        {
+            Console.Write(num + " ");
+        }
+        Console.WriteLine(); //line break
+    }
+}
