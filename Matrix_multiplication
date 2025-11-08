@@ -1,0 +1,63 @@
+using System;
+class Program
+{
+    public static void Main(string[] args)
+    {
+        // matrix sizes
+        int rowsA = 2, colsA = 3;
+        int rowsB = 3, colsB = 2;
+        // matrix values
+        int[,] A = {
+            { 1, 2, 3 },
+            { 4, 5, 6 }
+        };
+        int[,] B = {
+            { 7, 8 },
+            { 9, 10 },
+            { 11, 12 }
+        };
+        int[,] C = new int[rowsA, colsB]; // Resultant matrix size
+        // Matrix multiplication
+        for (int i = 0; i < rowsA; i++)
+        {
+            for (int j = 0; j < colsB; j++)
+            {
+                C[i, j] = 0;
+                for (int k = 0; k < colsA; k++)
+                {
+                    C[i, j] += A[i, k] * B[k, j];
+                }
+            }
+        }
+        // Matrix A
+        Console.WriteLine("Matrix A:");
+        for (int i = 0; i < rowsA; i++)
+        {
+            for (int j = 0; j < colsA; j++)
+            {
+                Console.Write(A[i, j] + "\t");
+            }
+            Console.WriteLine();
+        }
+        // Matrix B
+        Console.WriteLine("\nMatrix B:");
+        for (int i = 0; i < rowsB; i++)
+        {
+            for (int j = 0; j < colsB; j++)
+            {
+                Console.Write(B[i, j] + "\t");
+            }
+            Console.WriteLine();
+        }
+        // resultant Matrix C
+        Console.WriteLine("\nResultant Matrix C (A x B):");
+        for (int i = 0; i < rowsA; i++)
+        {
+            for (int j = 0; j < colsB; j++)
+            {
+                Console.Write(C[i, j] + "\t");
+            }
+            Console.WriteLine();
+        }
+    }
+}
