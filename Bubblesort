@@ -1,0 +1,52 @@
+using System;
+
+class Program
+{
+    // Bubble sort on an integer array
+    public static void BubbleSort(int[] arr)
+    {
+        int n = arr.Length;
+        for (int i = 0; i < n - 1; i++)
+        {
+            for (int j = 0; j < n - i - 1; j++)
+            {
+                if (arr[j] > arr[j + 1]) // swap if the current element is greater than the next
+                {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+    // Entry point of the program
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter the number of elements in the array: ");
+        int size = Convert.ToInt32(Console.ReadLine());
+        int[] numbers = new int[size];
+
+        for (int i = 0; i < size; i++)
+        {
+            Console.Write("Enter element " + (i + 1) + ": ");
+            numbers[i] = Convert.ToInt32(Console.ReadLine());
+        }
+
+        Console.WriteLine("\nArray before sorting:");
+        foreach (int num in numbers)
+        {
+            Console.Write(num + " ");
+        }
+
+        BubbleSort(numbers);
+
+        Console.WriteLine("\nArray after sorting:");
+        foreach (int num in numbers)
+        {
+            Console.Write(num + " ");
+        }
+
+        Console.WriteLine(); // line break
+    }
+}
