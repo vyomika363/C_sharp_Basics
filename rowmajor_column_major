@@ -1,0 +1,56 @@
+using System; //namespace
+
+class Program //default visibility is 'internal' if not specified
+{
+    public static void Main(string[] args) //entry point of the program
+    {
+        // number of rows and columns
+        Console.Write("number of rows: ");
+        int rows = Convert.ToInt32(Console.ReadLine());
+        Console.Write("number of columns: ");
+        int cols = Convert.ToInt32(Console.ReadLine());
+        int[,] matrix = new int[rows, cols];
+        // elements for the 2-D array
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                Console.Write($"Enter element [{i},{j}]: ");
+                matrix[i, j] = Convert.ToInt32(Console.ReadLine());
+            }
+        }
+
+        // Row-major order
+        int[] rowMajor = new int[rows * cols];
+        int index = 0;
+        for (int i = 0; i < rows; i++) // row by row
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                rowMajor[index++] = matrix[i, j];
+            }
+        }
+        Console.WriteLine("\n1-D array in Row-Major order:");
+        foreach (int num in rowMajor)
+        {
+            Console.Write(num + " ");
+        }
+
+        // Column-major order
+        int[] colMajor = new int[rows * cols];
+        index = 0;
+        for (int j = 0; j < cols; j++) // column by column
+        {
+            for (int i = 0; i < rows; i++)
+            {
+                colMajor[index++] = matrix[i, j];
+            }
+        }
+        Console.WriteLine("\n\n1-D array in Column-Major order:");
+        foreach (int num in colMajor)
+        {
+            Console.Write(num + " ");
+        }
+        Console.WriteLine(); //Line break
+    }
+}
